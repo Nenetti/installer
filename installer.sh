@@ -56,11 +56,6 @@ cat id_rsa.pub
 echo
 $browser "https://github.com/settings/ssh"
 
-echo "Host github github.com
-user git
-Hostname github.com
-Port 22
-IdentityFile ~/.ssh/id_rsa" > config
 chmod 600 id_rsa
 
 read -p "email:" mail
