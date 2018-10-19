@@ -1,5 +1,7 @@
 #!/bin/bash
 
+browser="google-chrome"
+
 package="
 compizconfig-settings-manager unity-tweak-tool
 git
@@ -43,8 +45,24 @@ wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.3-amd64.d
 sudo dpkg -i slack-desktop-3.3.3-amd64.deb
 rm slack-desktop-3.3.3-amd64.deb
 
-#git環境構築
+#Git環境構築
 echo "Github環境構築"
+mkdir ~/.ssh
+cd ~/.ssh
+
+ssh-keygen -t rsa
+echo
+cat id_rsa.pub
+echo
+$browser "https://github.com/settings/ssh"
+
+echo "Host github github.com
+user git
+Hostname github.com
+Port 22
+IdentityFile ~/.ssh/id_rsa" > config
+chmod 600 id_rsa
+
 read -p "email:" mail
 read -p "name:" name
 git config --global user.email $mail
