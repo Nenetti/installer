@@ -9,7 +9,7 @@ cd ~/.ssh
 
 ssh-keygen -t rsa
 echo
-cat id_rsa.pub
+cat id_rsa.pub | xsel --clipboard --input
 echo
 $browser "https://github.com/settings/ssh"
 

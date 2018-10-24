@@ -8,6 +8,8 @@ python3-pip
 oracle-java8-installer
 gradle
 maven
+xsel
+expect
 "
 
 read -p "初期インストールをしますか？ (y/n): " yn
