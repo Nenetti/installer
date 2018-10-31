@@ -21,5 +21,3 @@ sudo apt autoremove -y
 #bashrc書き換え
 echo alias python='/usr/bin/python3.5' >> ~/.bashrc
 echo alias pip='/usr/bin/pip3' >> ~/.bashrc
-
-
