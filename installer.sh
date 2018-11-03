@@ -10,6 +10,7 @@ gradle
 maven
 xsel
 expect
+mpg321
 "
 
 read -p "初期インストールをしますか？ (y/n): " yn
