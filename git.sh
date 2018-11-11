@@ -11,7 +11,7 @@ git config --global user.email $mail
 git config --global user.name $name
 
 DIR=$(cd $(dirname $0); pwd)
-echo alias pip='source .git_view.sh' >> ~/.bashrc
+echo 'source .git_view.sh' >> ~/.bashrc
 cp $DIR/.git_view.sh $HOME/.git_view.sh
 
 #SSH設定
