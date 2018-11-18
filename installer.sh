@@ -11,6 +11,7 @@ maven
 xsel
 expect
 mpg321
+gnome-tweak-tool
 "
 
 read -p "初期インストールをしますか？ (y/n): " yn
