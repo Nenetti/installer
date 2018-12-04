@@ -42,6 +42,11 @@ case "$yn" in [yY]*)
 	bash git.sh
 esac
 
+read -p "Latexの環境構築しますか？ (y/n): " yn
+case "$yn" in [yY]*) 
+	bash latex.sh
+esac
+
 #ROSの確認
 read -p "ROS-kineticをインストールしますか？ (y/n): " yn
 case "$yn" in [yY]*) 
