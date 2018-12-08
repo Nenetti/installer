@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install texlive-full
+sudo apt-get install -y texlive-full
 
 read -p "Atomをインストールしますか？ (y/n): " yn
 case "$yn" in [yY]*) 
