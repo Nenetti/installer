@@ -12,7 +12,12 @@ xsel
 expect
 mpg321
 gnome-tweak-tool
+redshift
+redshift-gtk
 "
+
+DIR=$(cd $(dirname $0); pwd)
+cp $DIR/redshift.conf $HOME/.config/redshift.conf
 
 read -p "初期インストールをしますか？ (y/n): " yn
 case "$yn" in [yY]*) 
