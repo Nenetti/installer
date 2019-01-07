@@ -16,6 +16,8 @@ redshift
 redshift-gtk
 "
 
+sudo apt-get install $package
+
 DIR=$(cd $(dirname $0); pwd)
 cp $DIR/redshift.conf $HOME/.config/redshift.conf
 
