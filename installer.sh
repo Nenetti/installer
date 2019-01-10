@@ -5,6 +5,7 @@ compizconfig-settings-manager unity-tweak-tool
 git
 python3-tk
 python3-pip
+python-pip
 oracle-java8-installer
 gradle
 maven
